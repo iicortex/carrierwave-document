@@ -2,7 +2,7 @@ require 'docsplite'
 require 'carrierwave'
 require 'carrierwave/document/docsplite_options'
 
-module CarrierWave
+module Carrierwave
   module Document
     extend ActiveSupport::Concern
 
