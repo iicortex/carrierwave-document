@@ -1,4 +1,4 @@
-module Carrierwave
+module CarrierWave
   module Document
     class DocspliteOptions
       attr_reader :format, :size, :callbacks

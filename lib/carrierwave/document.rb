@@ -2,7 +2,7 @@ require 'docsplite'
 require 'carrierwave'
 require 'carrierwave/document/docsplite_options'
 
-module Carrierwave
+module CarrierWave
   module Document
     extend ActiveSupport::Concern
 
@@ -24,7 +24,7 @@ module Carrierwave
     def thumbnail options = {}
       cache_stored_file! if !cached?
 
-      @options = CarrierWave::Doc::DocspliteOptions.new(options)
+      @options = CarrierWave::Document::DocspliteOptions.new(options)
      
       tmp_path = File.dirname(current_path)
   
@@ -38,7 +38,7 @@ module Carrierwave
       cache_stored_file! if !cached?
       
       tmp_path = File.dirname(current_path) 
-      @options = CarrierWave::Doc::DocspliteOptions.new(options)
+      @options = CarrierWave::Document::DocspliteOptions.new(options)
    
       with_trancoding_callbacks do
         if file.content_type != "application/pdf"
