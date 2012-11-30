@@ -12,14 +12,9 @@ Gem::Specification.new do |gem|
   gem.summary     = %q{Carrierwave extension that uses docsplite to transcode documents.}
   gem.description = %q{Lets you make documents thumbnails in carrierwave via carrierwave-document.}
   
-  #  gem.files         = `git ls-files`.split($/)
-  #  gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
-  #  gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
-  #  gem.require_paths = ["lib"]
-
-  gem.files         = `git ls-files`.split("\n")
-  gem.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
-  gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
+  gem.files         = `git ls-files`.split($/)
+  gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
+  gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
 
   gem.add_dependency "docsplit"
