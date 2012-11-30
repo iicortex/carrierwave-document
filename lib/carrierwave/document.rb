@@ -1,4 +1,4 @@
-require 'docsplite'
+require 'docsplit'
 require 'carrierwave'
 require 'carrierwave/document/docsplite_options'
 
