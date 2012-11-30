@@ -9,7 +9,7 @@ Gem::Specification.new do |gem|
   gem.authors     = ["iicortex"]
   gem.email       = ["cortex@outlook.com"]
   gem.homepage    = "https://github.com/iicotex/carrierwave-document#readme"
-  gem.summary     = %q{Carrierwave extension that uses docsplite to transcode documentgem.}
+  gem.summary     = %q{Carrierwave extension that uses docsplite to transcode documents.}
   gem.description = %q{Lets you make documents thumbnails in carrierwave via carrierwave-document.}
   
   #  gem.files         = `git ls-files`.split($/)

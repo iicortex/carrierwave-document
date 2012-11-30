@@ -7,11 +7,6 @@ module CarrierWave
         @format = options[:format] || "png"
         @size = options[:size] || "640x360"
         @callbacks = options[:callbacks] || {}
-        @unparsed = options
-      end
-
-      def raw
-        @unparsed
       end
 
     end

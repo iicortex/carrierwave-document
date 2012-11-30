@@ -16,9 +16,6 @@ module CarrierWave
         process covert_to_pdf: options
       end
 
-      #      def extract_images options = {}
-      #        process extract_images: options
-      #      end
     end
 
     def thumbnail options = {}
@@ -47,18 +44,6 @@ module CarrierWave
         end
       end
     end
-
-    #    def extract_images options = {}
-    #      cache_stored_file! if !cached?
-    #
-    #      tmp_path =  File.join( File.dirname(current_path), file.basename )
-    #      @options = CarrierWave::Doc::DocspliteOptions.new(options)
-    #
-    #      with_trancoding_callbacks do
-    #        Docsplit.extract_images(current_path, :size => @options.size, :format => @options.format, :output => tmp_path)
-    #        File.delete(current_path)
-    #      end
-    #    end
 
     private
     def with_trancoding_callbacks(&block)
